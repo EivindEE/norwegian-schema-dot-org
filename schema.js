@@ -1,3 +1,12 @@
+// schema.js
+
+// Eivind Eidheim Elseth
+// 21.09.2012
+
+// Schema.org mappings, the list contains tuples.
+// Each tuple t is in the form :
+// t[0] matches a schema:t[0], and t[1] matches the schema:t[0] rdfs:label t[1]
+
 exports.mappings =
 	[
 		["Thing", "Thing"],
