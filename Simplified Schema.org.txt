@@ -1,0 +1,2895 @@
+@prefix schema: <http://schemaorg/>
+@prefix rdf: <http://wwww3org/1999/02/22-rdf-syntax-ns#>
+@prefix 
+@prefix owl: <http://wwww3org/2002/07/owl#>
+@prefix xsd: <http://wwww3org/2001/XMLSchema#>
+@prefix foaf: <http://xmlnscom/foaf/01/>
+@prefix dct: <http://purlorg/dc/terms/>
+
+<http://schemardfsorg/all> a owl:Ontology;
+    dct:title "The schemaorg terms in RDFS+OWL"@en;
+    dct:description "This is a conversion of the terms defined at schemaorg to RDFS and OWL"@en;
+    foaf:page <http://schemardfsorg/>;
+
+    dct:hasFormat <http://schemardfsorg/allttl>;
+    dct:hasFormat <http://schemardfsorg/allrdf>;
+    dct:hasFormat <http://schemardfsorg/allnt>;
+    dct:hasFormat <http://schemardfsorg/alljson>;
+    dct:hasFormat [
+        dct:hasPart <http://schemardfsorg/all-classescsv>;
+        dct:hasPart <http://schemardfsorg/all-propertiescsv>;
+    ];
+    dct:source <http://schemaorg/>;
+    dct:license <http://schemaorg/docs/termshtml>;
+    dct:valid "2012-09-21"^^xsd:date;
+
+schema:Thing a rdfs:Class;
+    rdfs:label "Thing"@en;
+
+schema:CreativeWork a rdfs:Class;
+    rdfs:label "Creative Work"@en;
+
+schema:Article a rdfs:Class;
+    rdfs:label "Article"@en;
+
+schema:BlogPosting a rdfs:Class;
+    rdfs:label "Blog Posting"@en;
+
+schema:NewsArticle a rdfs:Class;
+    rdfs:label "News Article"@en;
+
+schema:ScholarlyArticle a rdfs:Class;
+    rdfs:label "Scholarly Article"@en;
+
+schema:MedicalScholarlyArticle a rdfs:Class;
+    rdfs:label "Medical Scholarly Article"@en;
+
+schema:Blog a rdfs:Class;
+    rdfs:label "Blog"@en;
+
+schema:Book a rdfs:Class;
+    rdfs:label "Book"@en;
+
+schema:Comment a rdfs:Class;
+    rdfs:label "Comment"@en;
+
+schema:Diet a rdfs:Class;
+    rdfs:label "Diet"@en;
+
+schema:ExercisePlan a rdfs:Class;
+    rdfs:label "Exercise Plan"@en;
+
+schema:ItemList a rdfs:Class;
+    rdfs:label "Item List"@en;
+
+schema:Map a rdfs:Class;
+    rdfs:label "Map"@en;
+
+schema:MediaObject a rdfs:Class;
+    rdfs:label "Media Object"@en;
+
+schema:AudioObject a rdfs:Class;
+    rdfs:label "Audio Object"@en;
+
+schema:ImageObject a rdfs:Class;
+    rdfs:label "Image Object"@en;
+
+schema:MusicVideoObject a rdfs:Class;
+    rdfs:label "Music Video Object"@en;
+
+schema:VideoObject a rdfs:Class;
+    rdfs:label "Video Object"@en;
+
+schema:Movie a rdfs:Class;
+    rdfs:label "Movie"@en;
+
+schema:MusicPlaylist a rdfs:Class;
+    rdfs:label "Music Playlist"@en;
+
+schema:MusicAlbum a rdfs:Class;
+    rdfs:label "Music Album"@en;
+
+schema:MusicRecording a rdfs:Class;
+    rdfs:label "Music Recording"@en;
+
+schema:Painting a rdfs:Class;
+    rdfs:label "Painting"@en;
+
+schema:Photograph a rdfs:Class;
+    rdfs:label "Photograph"@en;
+
+schema:Recipe a rdfs:Class;
+    rdfs:label "Recipe"@en;
+
+schema:Review a rdfs:Class;
+    rdfs:label "Review"@en;
+
+schema:Sculpture a rdfs:Class;
+    rdfs:label "Sculpture"@en;
+
+schema:SoftwareApplication a rdfs:Class;
+    rdfs:label "Software Application"@en;
+
+schema:MobileApplication a rdfs:Class;
+    rdfs:label "Mobile Application"@en;
+
+schema:WebApplication a rdfs:Class;
+    rdfs:label "Web Application"@en;
+
+schema:TVEpisode a rdfs:Class;
+    rdfs:label "TV Episode"@en;
+
+schema:TVSeason a rdfs:Class;
+    rdfs:label "TV Season"@en;
+
+schema:TVSeries a rdfs:Class;
+    rdfs:label "TV Series"@en;
+
+schema:WebPage a rdfs:Class;
+    rdfs:label "Web Page"@en;
+
+schema:AboutPage a rdfs:Class;
+    rdfs:label "About Page"@en;
+
+schema:CheckoutPage a rdfs:Class;
+    rdfs:label "Checkout Page"@en;
+
+schema:CollectionPage a rdfs:Class;
+    rdfs:label "Collection Page"@en;
+
+schema:ImageGallery a rdfs:Class;
+    rdfs:label "Image Gallery"@en;
+
+schema:VideoGallery a rdfs:Class;
+    rdfs:label "Video Gallery"@en;
+
+schema:ContactPage a rdfs:Class;
+    rdfs:label "Contact Page"@en;
+
+schema:ItemPage a rdfs:Class;
+    rdfs:label "Item Page"@en;
+
+schema:MedicalWebPage a rdfs:Class;
+    rdfs:label "Medical Web Page"@en;
+
+schema:ProfilePage a rdfs:Class;
+    rdfs:label "Profile Page"@en;
+
+schema:SearchResultsPage a rdfs:Class;
+    rdfs:label "Search Results Page"@en;
+
+schema:WebPageElement a rdfs:Class;
+    rdfs:label "Web Page Element"@en;
+
+schema:SiteNavigationElement a rdfs:Class;
+    rdfs:label "Site Navigation Element"@en;
+
+schema:Table a rdfs:Class;
+    rdfs:label "Table"@en;
+
+schema:WPAdBlock a rdfs:Class;
+    rdfs:label "WP Ad Block"@en;
+
+schema:WPFooter a rdfs:Class;
+    rdfs:label "WP Footer"@en;
+
+schema:WPHeader a rdfs:Class;
+    rdfs:label "WP Header"@en;
+
+schema:WPSideBar a rdfs:Class;
+    rdfs:label "WP Side Bar"@en;
+
+schema:Event a rdfs:Class;
+    rdfs:label "Event"@en;
+
+schema:BusinessEvent a rdfs:Class;
+    rdfs:label "Business Event"@en;
+
+schema:ChildrensEvent a rdfs:Class;
+    rdfs:label "Childrens Event"@en;
+
+schema:ComedyEvent a rdfs:Class;
+    rdfs:label "Comedy Event"@en;
+
+schema:DanceEvent a rdfs:Class;
+    rdfs:label "Dance Event"@en;
+
+schema:EducationEvent a rdfs:Class;
+    rdfs:label "Education Event"@en;
+
+schema:Festival a rdfs:Class;
+    rdfs:label "Festival"@en;
+
+schema:FoodEvent a rdfs:Class;
+    rdfs:label "Food Event"@en;
+
+schema:LiteraryEvent a rdfs:Class;
+    rdfs:label "Literary Event"@en;
+
+schema:MusicEvent a rdfs:Class;
+    rdfs:label "Music Event"@en;
+
+schema:SaleEvent a rdfs:Class;
+    rdfs:label "Sale Event"@en;
+
+schema:SocialEvent a rdfs:Class;
+    rdfs:label "Social Event"@en;
+
+schema:SportsEvent a rdfs:Class;
+    rdfs:label "Sports Event"@en;
+
+schema:TheaterEvent a rdfs:Class;
+    rdfs:label "Theater Event"@en;
+
+schema:UserInteraction a rdfs:Class;
+    rdfs:label "User Interaction"@en;
+
+schema:UserBlocks a rdfs:Class;
+    rdfs:label "User Blocks"@en;
+
+schema:UserCheckins a rdfs:Class;
+    rdfs:label "User Checkins"@en;
+
+schema:UserComments a rdfs:Class;
+    rdfs:label "User Comments"@en;
+
+schema:UserDownloads a rdfs:Class;
+    rdfs:label "User Downloads"@en;
+
+schema:UserLikes a rdfs:Class;
+    rdfs:label "User Likes"@en;
+
+schema:UserPageVisits a rdfs:Class;
+    rdfs:label "User Page Visits"@en;
+
+schema:UserPlays a rdfs:Class;
+    rdfs:label "User Plays"@en;
+
+schema:UserPlusOnes a rdfs:Class;
+    rdfs:label "User Plus Ones"@en;
+
+schema:UserTweets a rdfs:Class;
+    rdfs:label "User Tweets"@en;
+
+schema:VisualArtsEvent a rdfs:Class;
+    rdfs:label "Visual Arts Event"@en;
+
+schema:Intangible a rdfs:Class;
+    rdfs:label "Intangible"@en;
+
+schema:Audience a rdfs:Class;
+    rdfs:label "Audience"@en;
+
+schema:MedicalAudience a rdfs:Class;
+    rdfs:label "Medical Audience"@en;
+
+schema:Enumeration a rdfs:Class;
+    rdfs:label "Enumeration"@en;
+
+schema:BookFormatType a rdfs:Class;
+    rdfs:label "Book Format Type"@en;
+
+schema:ItemAvailability a rdfs:Class;
+    rdfs:label "Item Availability"@en;
+
+schema:OfferItemCondition a rdfs:Class;
+    rdfs:label "Offer Item Condition"@en;
+
+schema:Specialty a rdfs:Class;
+    rdfs:label "Specialty"@en;
+
+schema:MedicalSpecialty a rdfs:Class;
+    rdfs:label "Medical Specialty"@en;
+
+schema:JobPosting a rdfs:Class;
+    rdfs:label "Job Posting"@en;
+
+schema:Language a rdfs:Class;
+    rdfs:label "Language"@en;
+
+schema:Offer a rdfs:Class;
+    rdfs:label "Offer"@en;
+
+schema:AggregateOffer a rdfs:Class;
+    rdfs:label "Aggregate Offer"@en;
+
+schema:Quantity a rdfs:Class;
+    rdfs:label "Quantity"@en;
+
+schema:Distance a rdfs:Class;
+    rdfs:label "Distance"@en;
+
+schema:Duration a rdfs:Class;
+    rdfs:label "Duration"@en;
+
+schema:Energy a rdfs:Class;
+    rdfs:label "Energy"@en;
+
+schema:Mass a rdfs:Class;
+    rdfs:label "Mass"@en;
+
+schema:Rating a rdfs:Class;
+    rdfs:label "Rating"@en;
+
+schema:AggregateRating a rdfs:Class;
+    rdfs:label "Aggregate Rating"@en;
+
+schema:StructuredValue a rdfs:Class;
+    rdfs:label "Structured Value"@en;
+
+schema:ContactPoint a rdfs:Class;
+    rdfs:label "Contact Point"@en;
+
+schema:PostalAddress a rdfs:Class;
+    rdfs:label "Postal Address"@en;
+
+schema:GeoCoordinates a rdfs:Class;
+    rdfs:label "Geo Coordinates"@en;
+
+schema:GeoShape a rdfs:Class;
+    rdfs:label "Geo Shape"@en;
+
+schema:NutritionInformation a rdfs:Class;
+    rdfs:label "Nutrition Information"@en;
+
+schema:MedicalEntity a rdfs:Class;
+    rdfs:label "Medical Entity"@en;
+
+schema:AnatomicalStructure a rdfs:Class;
+    rdfs:label "Anatomical Structure"@en;
+
+schema:Bone a rdfs:Class;
+    rdfs:label "Bone"@en;
+
+schema:BrainStructure a rdfs:Class;
+    rdfs:label "Brain Structure"@en;
+
+schema:Joint a rdfs:Class;
+    rdfs:label "Joint"@en;
+
+schema:Ligament a rdfs:Class;
+    rdfs:label "Ligament"@en;
+
+schema:Muscle a rdfs:Class;
+    rdfs:label "Muscle"@en;
+
+schema:Nerve a rdfs:Class;
+    rdfs:label "Nerve"@en;
+
+schema:Vessel a rdfs:Class;
+    rdfs:label "Vessel"@en;
+
+schema:Artery a rdfs:Class;
+    rdfs:label "Artery"@en;
+
+schema:LymphaticVessel a rdfs:Class;
+    rdfs:label "Lymphatic Vessel"@en;
+
+schema:Vein a rdfs:Class;
+    rdfs:label "Vein"@en;
+
+schema:AnatomicalSystem a rdfs:Class;
+    rdfs:label "Anatomical System"@en;
+
+schema:MedicalCause a rdfs:Class;
+    rdfs:label "Medical Cause"@en;
+
+schema:MedicalCondition a rdfs:Class;
+    rdfs:label "Medical Condition"@en;
+
+schema:InfectiousDisease a rdfs:Class;
+    rdfs:label "Infectious Disease"@en;
+
+schema:MedicalContraindication a rdfs:Class;
+    rdfs:label "Medical Contraindication"@en;
+
+schema:MedicalDevice a rdfs:Class;
+    rdfs:label "Medical Device"@en;
+
+schema:MedicalGuideline a rdfs:Class;
+    rdfs:label "Medical Guideline"@en;
+
+schema:MedicalGuidelineContraindication a rdfs:Class;
+    rdfs:label "Medical Guideline Contraindication"@en;
+
+schema:MedicalGuidelineRecommendation a rdfs:Class;
+    rdfs:label "Medical Guideline Recommendation"@en;
+
+schema:MedicalIndication a rdfs:Class;
+    rdfs:label "Medical Indication"@en;
+
+schema:ApprovedIndication a rdfs:Class;
+    rdfs:label "Approved Indication"@en;
+
+schema:PreventionIndication a rdfs:Class;
+    rdfs:label "Prevention Indication"@en;
+
+schema:TreatmentIndication a rdfs:Class;
+    rdfs:label "Treatment Indication"@en;
+
+schema:MedicalIntangible a rdfs:Class;
+    rdfs:label "Medical Intangible"@en;
+
+schema:DDxElement a rdfs:Class;
+    rdfs:label "D Dx Element"@en;
+
+schema:DoseSchedule a rdfs:Class;
+    rdfs:label "Dose Schedule"@en;
+
+schema:MaximumDoseSchedule a rdfs:Class;
+    rdfs:label "Maximum Dose Schedule"@en;
+
+schema:RecommendedDoseSchedule a rdfs:Class;
+    rdfs:label "Recommended Dose Schedule"@en;
+
+schema:ReportedDoseSchedule a rdfs:Class;
+    rdfs:label "Reported Dose Schedule"@en;
+
+schema:DrugCost a rdfs:Class;
+    rdfs:label "Drug Cost"@en;
+
+schema:DrugLegalStatus a rdfs:Class;
+    rdfs:label "Drug Legal Status"@en;
+
+schema:DrugStrength a rdfs:Class;
+    rdfs:label "Drug Strength"@en;
+
+schema:MedicalCode a rdfs:Class;
+    rdfs:label "Medical Code"@en;
+
+schema:MedicalConditionStage a rdfs:Class;
+    rdfs:label "Medical Condition Stage"@en;
+
+schema:MedicalEnumeration a rdfs:Class;
+    rdfs:label "Medical Enumeration"@en;
+
+schema:DrugCostCategory a rdfs:Class;
+    rdfs:label "Drug Cost Category"@en;
+
+schema:DrugPregnancyCategory a rdfs:Class;
+    rdfs:label "Drug Pregnancy Category"@en;
+
+schema:DrugPrescriptionStatus a rdfs:Class;
+    rdfs:label "Drug Prescription Status"@en;
+
+schema:InfectiousAgentClass a rdfs:Class;
+    rdfs:label "Infectious Agent Class"@en;
+
+schema:MedicalDevicePurpose a rdfs:Class;
+    rdfs:label "Medical Device Purpose"@en;
+
+schema:MedicalEvidenceLevel a rdfs:Class;
+    rdfs:label "Medical Evidence Level"@en;
+
+schema:MedicalImagingTechnique a rdfs:Class;
+    rdfs:label "Medical Imaging Technique"@en;
+
+schema:MedicalObservationalStudyDesign a rdfs:Class;
+    rdfs:label "Medical Observational Study Design"@en;
+
+schema:MedicalProcedureType a rdfs:Class;
+    rdfs:label "Medical Procedure Type"@en;
+
+schema:MedicalStudyStatus a rdfs:Class;
+    rdfs:label "Medical Study Status"@en;
+
+schema:MedicalTrialDesign a rdfs:Class;
+    rdfs:label "Medical Trial Design"@en;
+
+schema:MedicineSystem a rdfs:Class;
+    rdfs:label "Medicine System"@en;
+
+schema:PhysicalActivityCategory a rdfs:Class;
+    rdfs:label "Physical Activity Category"@en;
+
+schema:PhysicalExam a rdfs:Class;
+    rdfs:label "Physical Exam"@en;
+
+schema:MedicalProcedure a rdfs:Class;
+    rdfs:label "Medical Procedure"@en;
+
+schema:DiagnosticProcedure a rdfs:Class;
+    rdfs:label "Diagnostic Procedure"@en;
+
+schema:PalliativeProcedure a rdfs:Class;
+    rdfs:label "Palliative Procedure"@en;
+
+schema:TherapeuticProcedure a rdfs:Class;
+    rdfs:label "Therapeutic Procedure"@en;
+
+schema:MedicalRiskEstimator a rdfs:Class;
+    rdfs:label "Medical Risk Estimator"@en;
+
+schema:MedicalRiskCalculator a rdfs:Class;
+    rdfs:label "Medical Risk Calculator"@en;
+
+schema:MedicalRiskScore a rdfs:Class;
+    rdfs:label "Medical Risk Score"@en;
+
+schema:MedicalRiskFactor a rdfs:Class;
+    rdfs:label "Medical Risk Factor"@en;
+
+schema:MedicalSignOrSymptom a rdfs:Class;
+    rdfs:label "Medical Sign or Symptom"@en;
+
+schema:MedicalSign a rdfs:Class;
+    rdfs:label "Medical Sign"@en;
+
+schema:MedicalSymptom a rdfs:Class;
+    rdfs:label "Medical Symptom"@en;
+
+schema:MedicalStudy a rdfs:Class;
+    rdfs:label "Medical Study"@en;
+
+schema:MedicalObservationalStudy a rdfs:Class;
+    rdfs:label "Medical Observational Study"@en;
+
+schema:MedicalTrial a rdfs:Class;
+    rdfs:label "Medical Trial"@en;
+
+schema:MedicalTest a rdfs:Class;
+    rdfs:label "Medical Test"@en;
+
+schema:BloodTest a rdfs:Class;
+    rdfs:label "Blood Test"@en;
+
+schema:ImagingTest a rdfs:Class;
+    rdfs:label "Imaging Test"@en;
+
+schema:MedicalTestPanel a rdfs:Class;
+    rdfs:label "Medical Test Panel"@en;
+
+schema:PathologyTest a rdfs:Class;
+    rdfs:label "Pathology Test"@en;
+
+schema:MedicalTherapy a rdfs:Class;
+    rdfs:label "Medical Therapy"@en;
+
+schema:DietarySupplement a rdfs:Class;
+    rdfs:label "Dietary Supplement"@en;
+
+schema:Drug a rdfs:Class;
+    rdfs:label "Drug"@en;
+
+schema:DrugClass a rdfs:Class;
+    rdfs:label "Drug Class"@en;
+
+schema:LifestyleModification a rdfs:Class;
+    rdfs:label "Lifestyle Modification"@en;
+
+schema:PhysicalActivity a rdfs:Class;
+    rdfs:label "Physical Activity"@en;
+
+schema:PhysicalTherapy a rdfs:Class;
+    rdfs:label "Physical Therapy"@en;
+
+schema:PsychologicalTreatment a rdfs:Class;
+    rdfs:label "Psychological Treatment"@en;
+
+schema:RadiationTherapy a rdfs:Class;
+    rdfs:label "Radiation Therapy"@en;
+
+schema:SuperficialAnatomy a rdfs:Class;
+    rdfs:label "Superficial Anatomy"@en;
+
+schema:Organization a rdfs:Class;
+    rdfs:label "Organization"@en;
+
+schema:Corporation a rdfs:Class;
+    rdfs:label "Corporation"@en;
+
+schema:EducationalOrganization a rdfs:Class;
+    rdfs:label "Educational Organization"@en;
+
+schema:CollegeOrUniversity a rdfs:Class;
+    rdfs:label "College or University"@en;
+
+schema:ElementarySchool a rdfs:Class;
+    rdfs:label "Elementary School"@en;
+
+schema:HighSchool a rdfs:Class;
+    rdfs:label "High School"@en;
+
+schema:MiddleSchool a rdfs:Class;
+    rdfs:label "Middle School"@en;
+
+schema:Preschool a rdfs:Class;
+    rdfs:label "Preschool"@en;
+
+schema:School a rdfs:Class;
+    rdfs:label "School"@en;
+
+schema:GovernmentOrganization a rdfs:Class;
+    rdfs:label "Government Organization"@en;
+
+schema:LocalBusiness a rdfs:Class;
+    rdfs:label "Local Business"@en;
+
+schema:AnimalShelter a rdfs:Class;
+    rdfs:label "Animal Shelter"@en;
+
+schema:AutomotiveBusiness a rdfs:Class;
+    rdfs:label "Automotive Business"@en;
+
+schema:AutoBodyShop a rdfs:Class;
+    rdfs:label "Auto Body Shop"@en;
+
+schema:AutoDealer a rdfs:Class;
+    rdfs:label "Auto Dealer"@en;
+
+schema:AutoPartsStore a rdfs:Class;
+    rdfs:label "Auto Parts Store"@en;
+
+schema:AutoRental a rdfs:Class;
+    rdfs:label "Auto Rental"@en;
+
+schema:AutoRepair a rdfs:Class;
+    rdfs:label "Auto Repair"@en;
+
+schema:AutoWash a rdfs:Class;
+    rdfs:label "Auto Wash"@en;
+
+schema:GasStation a rdfs:Class;
+    rdfs:label "Gas Station"@en;
+
+schema:MotorcycleDealer a rdfs:Class;
+    rdfs:label "Motorcycle Dealer"@en;
+
+schema:MotorcycleRepair a rdfs:Class;
+    rdfs:label "Motorcycle Repair"@en;
+
+schema:ChildCare a rdfs:Class;
+    rdfs:label "Child Care"@en;
+
+schema:DryCleaningOrLaundry a rdfs:Class;
+    rdfs:label "Dry Cleaning or Laundry"@en;
+
+schema:EmergencyService a rdfs:Class;
+    rdfs:label "Emergency Service"@en;
+
+schema:FireStation a rdfs:Class;
+    rdfs:label "Fire Station"@en;
+
+schema:Hospital a rdfs:Class;
+    rdfs:label "Hospital"@en;
+
+schema:PoliceStation a rdfs:Class;
+    rdfs:label "Police Station"@en;
+
+schema:EmploymentAgency a rdfs:Class;
+    rdfs:label "Employment Agency"@en;
+
+schema:EntertainmentBusiness a rdfs:Class;
+    rdfs:label "Entertainment Business"@en;
+
+schema:AdultEntertainment a rdfs:Class;
+    rdfs:label "Adult Entertainment"@en;
+
+schema:AmusementPark a rdfs:Class;
+    rdfs:label "Amusement Park"@en;
+
+schema:ArtGallery a rdfs:Class;
+    rdfs:label "Art Gallery"@en;
+
+schema:Casino a rdfs:Class;
+    rdfs:label "Casino"@en;
+
+schema:ComedyClub a rdfs:Class;
+    rdfs:label "Comedy Club"@en;
+
+schema:MovieTheater a rdfs:Class;
+    rdfs:label "Movie Theater"@en;
+
+schema:NightClub a rdfs:Class;
+    rdfs:label "Night Club"@en;
+
+schema:FinancialService a rdfs:Class;
+    rdfs:label "Financial Service"@en;
+
+schema:AccountingService a rdfs:Class;
+    rdfs:label "Accounting Service"@en;
+
+schema:AutomatedTeller a rdfs:Class;
+    rdfs:label "Automated Teller"@en;
+
+schema:BankOrCreditUnion a rdfs:Class;
+    rdfs:label "Bank or Credit Union"@en;
+
+schema:InsuranceAgency a rdfs:Class;
+    rdfs:label "Insurance Agency"@en;
+
+schema:FoodEstablishment a rdfs:Class;
+    rdfs:label "Food Establishment"@en;
+
+schema:Bakery a rdfs:Class;
+    rdfs:label "Bakery"@en;
+
+schema:BarOrPub a rdfs:Class;
+    rdfs:label "Bar or Pub"@en;
+
+schema:Brewery a rdfs:Class;
+    rdfs:label "Brewery"@en;
+
+schema:CafeOrCoffeeShop a rdfs:Class;
+    rdfs:label "Cafe or Coffee Shop"@en;
+
+schema:FastFoodRestaurant a rdfs:Class;
+    rdfs:label "Fast Food Restaurant"@en;
+
+schema:IceCreamShop a rdfs:Class;
+    rdfs:label "Ice Cream Shop"@en;
+
+schema:Restaurant a rdfs:Class;
+    rdfs:label "Restaurant"@en;
+
+schema:Winery a rdfs:Class;
+    rdfs:label "Winery"@en;
+
+schema:GovernmentOffice a rdfs:Class;
+    rdfs:label "Government Office"@en;
+
+schema:PostOffice a rdfs:Class;
+    rdfs:label "Post Office"@en;
+
+schema:HealthAndBeautyBusiness a rdfs:Class;
+    rdfs:label "Health And Beauty Business"@en;
+
+schema:BeautySalon a rdfs:Class;
+    rdfs:label "Beauty Salon"@en;
+
+schema:DaySpa a rdfs:Class;
+    rdfs:label "Day Spa"@en;
+
+schema:HairSalon a rdfs:Class;
+    rdfs:label "Hair Salon"@en;
+
+schema:HealthClub a rdfs:Class;
+    rdfs:label "Health Club"@en;
+
+schema:NailSalon a rdfs:Class;
+    rdfs:label "Nail Salon"@en;
+
+schema:TattooParlor a rdfs:Class;
+    rdfs:label "Tattoo Parlor"@en;
+
+schema:HomeAndConstructionBusiness a rdfs:Class;
+    rdfs:label "Home And Construction Business"@en;
+
+schema:Electrician a rdfs:Class;
+    rdfs:label "Electrician"@en;
+
+schema:GeneralContractor a rdfs:Class;
+    rdfs:label "General Contractor"@en;
+
+schema:HVACBusiness a rdfs:Class;
+    rdfs:label "HVAC Business"@en;
+
+schema:HousePainter a rdfs:Class;
+    rdfs:label "House Painter"@en;
+
+schema:Locksmith a rdfs:Class;
+    rdfs:label "Locksmith"@en;
+
+schema:MovingCompany a rdfs:Class;
+    rdfs:label "Moving Company"@en;
+
+schema:Plumber a rdfs:Class;
+    rdfs:label "Plumber"@en;
+
+schema:RoofingContractor a rdfs:Class;
+    rdfs:label "Roofing Contractor"@en;
+
+schema:InternetCafe a rdfs:Class;
+    rdfs:label "Internet Cafe"@en;
+
+schema:Library a rdfs:Class;
+    rdfs:label "Library"@en;
+
+schema:LodgingBusiness a rdfs:Class;
+    rdfs:label "Lodging Business"@en;
+
+schema:BedAndBreakfast a rdfs:Class;
+    rdfs:label "Bed And Breakfast"@en;
+
+schema:Hostel a rdfs:Class;
+    rdfs:label "Hostel"@en;
+
+schema:Hotel a rdfs:Class;
+    rdfs:label "Hotel"@en;
+
+schema:Motel a rdfs:Class;
+    rdfs:label "Motel"@en;
+
+schema:MedicalOrganization a rdfs:Class;
+    rdfs:label "Medical Organization"@en;
+
+schema:Dentist a rdfs:Class;
+    rdfs:label "Dentist"@en;
+
+schema:DiagnosticLab a rdfs:Class;
+    rdfs:label "Diagnostic Lab"@en;
+
+schema:MedicalClinic a rdfs:Class;
+    rdfs:label "Medical Clinic"@en;
+
+schema:Optician a rdfs:Class;
+    rdfs:label "Optician"@en;
+
+schema:Pharmacy a rdfs:Class;
+    rdfs:label "Pharmacy"@en;
+
+schema:Physician a rdfs:Class;
+    rdfs:label "Physician"@en;
+
+schema:VeterinaryCare a rdfs:Class;
+    rdfs:label "Veterinary Care"@en;
+
+schema:ProfessionalService a rdfs:Class;
+    rdfs:label "Professional Service"@en;
+
+schema:Attorney a rdfs:Class;
+    rdfs:label "Attorney"@en;
+
+schema:Notary a rdfs:Class;
+    rdfs:label "Notary"@en;
+
+schema:RadioStation a rdfs:Class;
+    rdfs:label "Radio Station"@en;
+
+schema:RealEstateAgent a rdfs:Class;
+    rdfs:label "Real Estate Agent"@en;
+
+schema:RecyclingCenter a rdfs:Class;
+    rdfs:label "Recycling Center"@en;
+
+schema:SelfStorage a rdfs:Class;
+    rdfs:label "Self Storage"@en;
+
+schema:ShoppingCenter a rdfs:Class;
+    rdfs:label "Shopping Center"@en;
+
+schema:SportsActivityLocation a rdfs:Class;
+    rdfs:label "Sports Activity Location"@en;
+
+schema:BowlingAlley a rdfs:Class;
+    rdfs:label "Bowling Alley"@en;
+
+schema:ExerciseGym a rdfs:Class;
+    rdfs:label "Exercise Gym"@en;
+
+schema:GolfCourse a rdfs:Class;
+    rdfs:label "Golf Course"@en;
+
+schema:PublicSwimmingPool a rdfs:Class;
+    rdfs:label "Public Swimming Pool"@en;
+
+schema:SkiResort a rdfs:Class;
+    rdfs:label "Ski Resort"@en;
+
+schema:SportsClub a rdfs:Class;
+    rdfs:label "Sports Club"@en;
+
+schema:StadiumOrArena a rdfs:Class;
+    rdfs:label "Stadium or Arena"@en;
+
+schema:TennisComplex a rdfs:Class;
+    rdfs:label "Tennis Complex"@en;
+
+schema:Store a rdfs:Class;
+    rdfs:label "Store"@en;
+
+schema:BikeStore a rdfs:Class;
+    rdfs:label "Bike Store"@en;
+
+schema:BookStore a rdfs:Class;
+    rdfs:label "Book Store"@en;
+
+schema:ClothingStore a rdfs:Class;
+    rdfs:label "Clothing Store"@en;
+
+schema:ComputerStore a rdfs:Class;
+    rdfs:label "Computer Store"@en;
+
+schema:ConvenienceStore a rdfs:Class;
+    rdfs:label "Convenience Store"@en;
+
+schema:DepartmentStore a rdfs:Class;
+    rdfs:label "Department Store"@en;
+
+schema:ElectronicsStore a rdfs:Class;
+    rdfs:label "Electronics Store"@en;
+
+schema:Florist a rdfs:Class;
+    rdfs:label "Florist"@en;
+
+schema:FurnitureStore a rdfs:Class;
+    rdfs:label "Furniture Store"@en;
+
+schema:GardenStore a rdfs:Class;
+    rdfs:label "Garden Store"@en;
+
+schema:GroceryStore a rdfs:Class;
+    rdfs:label "Grocery Store"@en;
+
+schema:HardwareStore a rdfs:Class;
+    rdfs:label "Hardware Store"@en;
+
+schema:HobbyShop a rdfs:Class;
+    rdfs:label "Hobby Shop"@en;
+
+schema:HomeGoodsStore a rdfs:Class;
+    rdfs:label "Home Goods Store"@en;
+
+schema:JewelryStore a rdfs:Class;
+    rdfs:label "Jewelry Store"@en;
+
+schema:LiquorStore a rdfs:Class;
+    rdfs:label "Liquor Store"@en;
+
+schema:MensClothingStore a rdfs:Class;
+    rdfs:label "Mens Clothing Store"@en;
+
+schema:MobilePhoneStore a rdfs:Class;
+    rdfs:label "Mobile Phone Store"@en;
+
+schema:MovieRentalStore a rdfs:Class;
+    rdfs:label "Movie Rental Store"@en;
+
+schema:MusicStore a rdfs:Class;
+    rdfs:label "Music Store"@en;
+
+schema:OfficeEquipmentStore a rdfs:Class;
+    rdfs:label "Office Equipment Store"@en;
+
+schema:OutletStore a rdfs:Class;
+    rdfs:label "Outlet Store"@en;
+
+schema:PawnShop a rdfs:Class;
+    rdfs:label "Pawn Shop"@en;
+
+schema:PetStore a rdfs:Class;
+    rdfs:label "Pet Store"@en;
+
+schema:ShoeStore a rdfs:Class;
+    rdfs:label "Shoe Store"@en;
+
+schema:SportingGoodsStore a rdfs:Class;
+    rdfs:label "Sporting Goods Store"@en;
+
+schema:TireShop a rdfs:Class;
+    rdfs:label "Tire Shop"@en;
+
+schema:ToyStore a rdfs:Class;
+    rdfs:label "Toy Store"@en;
+
+schema:WholesaleStore a rdfs:Class;
+    rdfs:label "Wholesale Store"@en;
+
+schema:TelevisionStation a rdfs:Class;
+    rdfs:label "Television Station"@en;
+
+schema:TouristInformationCenter a rdfs:Class;
+    rdfs:label "Tourist Information Center"@en;
+
+schema:TravelAgency a rdfs:Class;
+    rdfs:label "Travel Agency"@en;
+
+schema:NGO a rdfs:Class;
+    rdfs:label "NGO"@en;
+
+schema:PerformingGroup a rdfs:Class;
+    rdfs:label "Performing Group"@en;
+
+schema:DanceGroup a rdfs:Class;
+    rdfs:label "Dance Group"@en;
+
+schema:MusicGroup a rdfs:Class;
+    rdfs:label "Music Group"@en;
+
+schema:TheaterGroup a rdfs:Class;
+    rdfs:label "Theater Group"@en;
+
+schema:SportsTeam a rdfs:Class;
+    rdfs:label "Sports Team"@en;
+
+schema:Person a rdfs:Class;
+    rdfs:label "Person"@en;
+
+schema:Place a rdfs:Class;
+    rdfs:label "Place"@en;
+
+schema:AdministrativeArea a rdfs:Class;
+    rdfs:label "Administrative Area"@en;
+
+schema:City a rdfs:Class;
+    rdfs:label "City"@en;
+
+schema:Country a rdfs:Class;
+    rdfs:label "Country"@en;
+
+schema:State a rdfs:Class;
+    rdfs:label "State"@en;
+
+schema:CivicStructure a rdfs:Class;
+    rdfs:label "Civic Structure"@en;
+
+schema:Airport a rdfs:Class;
+    rdfs:label "Airport"@en;
+
+schema:Aquarium a rdfs:Class;
+    rdfs:label "Aquarium"@en;
+
+schema:Beach a rdfs:Class;
+    rdfs:label "Beach"@en;
+
+schema:BusStation a rdfs:Class;
+    rdfs:label "Bus Station"@en;
+
+schema:BusStop a rdfs:Class;
+    rdfs:label "Bus Stop"@en;
+
+schema:Campground a rdfs:Class;
+    rdfs:label "Campground"@en;
+
+schema:Cemetery a rdfs:Class;
+    rdfs:label "Cemetery"@en;
+
+schema:Crematorium a rdfs:Class;
+    rdfs:label "Crematorium"@en;
+
+schema:EventVenue a rdfs:Class;
+    rdfs:label "Event Venue"@en;
+
+schema:GovernmentBuilding a rdfs:Class;
+    rdfs:label "Government Building"@en;
+
+schema:CityHall a rdfs:Class;
+    rdfs:label "City Hall"@en;
+
+schema:Courthouse a rdfs:Class;
+    rdfs:label "Courthouse"@en;
+
+schema:DefenceEstablishment a rdfs:Class;
+    rdfs:label "Defence Establishment"@en;
+
+schema:Embassy a rdfs:Class;
+    rdfs:label "Embassy"@en;
+
+schema:LegislativeBuilding a rdfs:Class;
+    rdfs:label "Legislative Building"@en;
+
+schema:Museum a rdfs:Class;
+    rdfs:label "Museum"@en;
+
+schema:MusicVenue a rdfs:Class;
+    rdfs:label "Music Venue"@en;
+
+schema:Park a rdfs:Class;
+    rdfs:label "Park"@en;
+
+schema:ParkingFacility a rdfs:Class;
+    rdfs:label "Parking Facility"@en;
+
+schema:PerformingArtsTheater a rdfs:Class;
+    rdfs:label "Performing Arts Theater"@en;
+
+schema:PlaceOfWorship a rdfs:Class;
+    rdfs:label "Place of Worship"@en;
+
+schema:BuddhistTemple a rdfs:Class;
+    rdfs:label "Buddhist Temple"@en;
+
+schema:CatholicChurch a rdfs:Class;
+    rdfs:label "Catholic Church"@en;
+
+schema:Church a rdfs:Class;
+    rdfs:label "Church"@en;
+
+schema:HinduTemple a rdfs:Class;
+    rdfs:label "Hindu Temple"@en;
+
+schema:Mosque a rdfs:Class;
+    rdfs:label "Mosque"@en;
+
+schema:Synagogue a rdfs:Class;
+    rdfs:label "Synagogue"@en;
+
+schema:Playground a rdfs:Class;
+    rdfs:label "Playground"@en;
+
+schema:RVPark a rdfs:Class;
+    rdfs:label "RV Park"@en;
+
+schema:SubwayStation a rdfs:Class;
+    rdfs:label "Subway Station"@en;
+
+schema:TaxiStand a rdfs:Class;
+    rdfs:label "Taxi Stand"@en;
+
+schema:TrainStation a rdfs:Class;
+    rdfs:label "Train Station"@en;
+
+schema:Zoo a rdfs:Class;
+    rdfs:label "Zoo"@en;
+
+schema:Landform a rdfs:Class;
+    rdfs:label "Landform"@en;
+
+schema:BodyOfWater a rdfs:Class;
+    rdfs:label "Body of Water"@en;
+
+schema:Canal a rdfs:Class;
+    rdfs:label "Canal"@en;
+
+schema:LakeBodyOfWater a rdfs:Class;
+    rdfs:label "Lake Body of Water"@en;
+
+schema:OceanBodyOfWater a rdfs:Class;
+    rdfs:label "Ocean Body of Water"@en;
+
+schema:Pond a rdfs:Class;
+    rdfs:label "Pond"@en;
+
+schema:Reservoir a rdfs:Class;
+    rdfs:label "Reservoir"@en;
+
+schema:RiverBodyOfWater a rdfs:Class;
+    rdfs:label "River Body of Water"@en;
+
+schema:SeaBodyOfWater a rdfs:Class;
+    rdfs:label "Sea Body of Water"@en;
+
+schema:Waterfall a rdfs:Class;
+    rdfs:label "Waterfall"@en;
+
+schema:Continent a rdfs:Class;
+    rdfs:label "Continent"@en;
+
+schema:Mountain a rdfs:Class;
+    rdfs:label "Mountain"@en;
+
+schema:Volcano a rdfs:Class;
+    rdfs:label "Volcano"@en;
+
+schema:LandmarksOrHistoricalBuildings a rdfs:Class;
+    rdfs:label "Landmarks or Historical Buildings"@en;
+
+schema:AnimalShelter a rdfs:Class;
+    rdfs:label "Animal Shelter"@en;
+
+schema:AutomotiveBusiness a rdfs:Class;
+    rdfs:label "Automotive Business"@en;
+
+schema:AutoBodyShop a rdfs:Class;
+    rdfs:label "Auto Body Shop"@en;
+
+schema:AutoDealer a rdfs:Class;
+    rdfs:label "Auto Dealer"@en;
+
+schema:AutoRental a rdfs:Class;
+    rdfs:label "Auto Rental"@en;
+
+schema:AutoRepair a rdfs:Class;
+    rdfs:label "Auto Repair"@en;
+
+schema:AutoWash a rdfs:Class;
+    rdfs:label "Auto Wash"@en;
+
+schema:GasStation a rdfs:Class;
+    rdfs:label "Gas Station"@en;
+
+schema:MotorcycleDealer a rdfs:Class;
+    rdfs:label "Motorcycle Dealer"@en;
+
+schema:MotorcycleRepair a rdfs:Class;
+    rdfs:label "Motorcycle Repair"@en;
+
+schema:ChildCare a rdfs:Class;
+    rdfs:label "Child Care"@en;
+
+schema:DryCleaningOrLaundry a rdfs:Class;
+    rdfs:label "Dry Cleaning or Laundry"@en;
+
+schema:EmergencyService a rdfs:Class;
+    rdfs:label "Emergency Service"@en;
+
+schema:EmploymentAgency a rdfs:Class;
+    rdfs:label "Employment Agency"@en;
+
+schema:EntertainmentBusiness a rdfs:Class;
+    rdfs:label "Entertainment Business"@en;
+
+schema:AdultEntertainment a rdfs:Class;
+    rdfs:label "Adult Entertainment"@en;
+
+schema:AmusementPark a rdfs:Class;
+    rdfs:label "Amusement Park"@en;
+
+schema:ArtGallery a rdfs:Class;
+    rdfs:label "Art Gallery"@en;
+
+schema:Casino a rdfs:Class;
+    rdfs:label "Casino"@en;
+
+schema:ComedyClub a rdfs:Class;
+    rdfs:label "Comedy Club"@en;
+
+schema:NightClub a rdfs:Class;
+    rdfs:label "Night Club"@en;
+
+schema:FinancialService a rdfs:Class;
+    rdfs:label "Financial Service"@en;
+
+schema:AutomatedTeller a rdfs:Class;
+    rdfs:label "Automated Teller"@en;
+
+schema:BankOrCreditUnion a rdfs:Class;
+    rdfs:label "Bank or Credit Union"@en;
+
+schema:InsuranceAgency a rdfs:Class;
+    rdfs:label "Insurance Agency"@en;
+
+schema:FoodEstablishment a rdfs:Class;
+    rdfs:label "Food Establishment"@en;
+
+schema:Bakery a rdfs:Class;
+    rdfs:label "Bakery"@en;
+
+schema:BarOrPub a rdfs:Class;
+    rdfs:label "Bar or Pub"@en;
+
+schema:Brewery a rdfs:Class;
+    rdfs:label "Brewery"@en;
+
+schema:CafeOrCoffeeShop a rdfs:Class;
+    rdfs:label "Cafe or Coffee Shop"@en;
+
+schema:FastFoodRestaurant a rdfs:Class;
+    rdfs:label "Fast Food Restaurant"@en;
+
+schema:IceCreamShop a rdfs:Class;
+    rdfs:label "Ice Cream Shop"@en;
+
+schema:Restaurant a rdfs:Class;
+    rdfs:label "Restaurant"@en;
+
+schema:Winery a rdfs:Class;
+    rdfs:label "Winery"@en;
+
+schema:GovernmentOffice a rdfs:Class;
+    rdfs:label "Government Office"@en;
+
+schema:PostOffice a rdfs:Class;
+    rdfs:label "Post Office"@en;
+
+schema:HealthAndBeautyBusiness a rdfs:Class;
+    rdfs:label "Health And Beauty Business"@en;
+
+schema:BeautySalon a rdfs:Class;
+    rdfs:label "Beauty Salon"@en;
+
+schema:DaySpa a rdfs:Class;
+    rdfs:label "Day Spa"@en;
+
+schema:HairSalon a rdfs:Class;
+    rdfs:label "Hair Salon"@en;
+
+schema:NailSalon a rdfs:Class;
+    rdfs:label "Nail Salon"@en;
+
+schema:TattooParlor a rdfs:Class;
+    rdfs:label "Tattoo Parlor"@en;
+
+schema:HomeAndConstructionBusiness a rdfs:Class;
+    rdfs:label "Home And Construction Business"@en;
+
+schema:HVACBusiness a rdfs:Class;
+    rdfs:label "HVAC Business"@en;
+
+schema:MovingCompany a rdfs:Class;
+    rdfs:label "Moving Company"@en;
+
+schema:InternetCafe a rdfs:Class;
+    rdfs:label "Internet Cafe"@en;
+
+schema:Library a rdfs:Class;
+    rdfs:label "Library"@en;
+
+schema:LodgingBusiness a rdfs:Class;
+    rdfs:label "Lodging Business"@en;
+
+schema:BedAndBreakfast a rdfs:Class;
+    rdfs:label "Bed And Breakfast"@en;
+
+schema:Hostel a rdfs:Class;
+    rdfs:label "Hostel"@en;
+
+schema:Hotel a rdfs:Class;
+    rdfs:label "Hotel"@en;
+
+schema:Motel a rdfs:Class;
+    rdfs:label "Motel"@en;
+
+schema:MedicalOrganization a rdfs:Class;
+    rdfs:label "Medical Organization"@en;
+
+schema:DiagnosticLab a rdfs:Class;
+    rdfs:label "Diagnostic Lab"@en;
+
+schema:MedicalClinic a rdfs:Class;
+    rdfs:label "Medical Clinic"@en;
+
+schema:Optician a rdfs:Class;
+    rdfs:label "Optician"@en;
+
+schema:Pharmacy a rdfs:Class;
+    rdfs:label "Pharmacy"@en;
+
+schema:Physician a rdfs:Class;
+    rdfs:label "Physician"@en;
+
+schema:VeterinaryCare a rdfs:Class;
+    rdfs:label "Veterinary Care"@en;
+
+schema:ProfessionalService a rdfs:Class;
+    rdfs:label "Professional Service"@en;
+
+schema:Attorney a rdfs:Class;
+    rdfs:label "Attorney"@en;
+
+schema:Notary a rdfs:Class;
+    rdfs:label "Notary"@en;
+
+schema:RadioStation a rdfs:Class;
+    rdfs:label "Radio Station"@en;
+
+schema:RealEstateAgent a rdfs:Class;
+    rdfs:label "Real Estate Agent"@en;
+
+schema:RecyclingCenter a rdfs:Class;
+    rdfs:label "Recycling Center"@en;
+
+schema:SelfStorage a rdfs:Class;
+    rdfs:label "Self Storage"@en;
+
+schema:ShoppingCenter a rdfs:Class;
+    rdfs:label "Shopping Center"@en;
+
+schema:SportsActivityLocation a rdfs:Class;
+    rdfs:label "Sports Activity Location"@en;
+
+schema:BowlingAlley a rdfs:Class;
+    rdfs:label "Bowling Alley"@en;
+
+schema:ExerciseGym a rdfs:Class;
+    rdfs:label "Exercise Gym"@en;
+
+schema:GolfCourse a rdfs:Class;
+    rdfs:label "Golf Course"@en;
+
+schema:PublicSwimmingPool a rdfs:Class;
+    rdfs:label "Public Swimming Pool"@en;
+
+schema:SkiResort a rdfs:Class;
+    rdfs:label "Ski Resort"@en;
+
+schema:SportsClub a rdfs:Class;
+    rdfs:label "Sports Club"@en;
+
+schema:TennisComplex a rdfs:Class;
+    rdfs:label "Tennis Complex"@en;
+
+schema:Store a rdfs:Class;
+    rdfs:label "Store"@en;
+
+schema:BikeStore a rdfs:Class;
+    rdfs:label "Bike Store"@en;
+
+schema:BookStore a rdfs:Class;
+    rdfs:label "Book Store"@en;
+
+schema:ClothingStore a rdfs:Class;
+    rdfs:label "Clothing Store"@en;
+
+schema:ComputerStore a rdfs:Class;
+    rdfs:label "Computer Store"@en;
+
+schema:ConvenienceStore a rdfs:Class;
+    rdfs:label "Convenience Store"@en;
+
+schema:DepartmentStore a rdfs:Class;
+    rdfs:label "Department Store"@en;
+
+schema:ElectronicsStore a rdfs:Class;
+    rdfs:label "Electronics Store"@en;
+
+schema:Florist a rdfs:Class;
+    rdfs:label "Florist"@en;
+
+schema:FurnitureStore a rdfs:Class;
+    rdfs:label "Furniture Store"@en;
+
+schema:GardenStore a rdfs:Class;
+    rdfs:label "Garden Store"@en;
+
+schema:GroceryStore a rdfs:Class;
+    rdfs:label "Grocery Store"@en;
+
+schema:HardwareStore a rdfs:Class;
+    rdfs:label "Hardware Store"@en;
+
+schema:HobbyShop a rdfs:Class;
+    rdfs:label "Hobby Shop"@en;
+
+schema:HomeGoodsStore a rdfs:Class;
+    rdfs:label "Home Goods Store"@en;
+
+schema:JewelryStore a rdfs:Class;
+    rdfs:label "Jewelry Store"@en;
+
+schema:LiquorStore a rdfs:Class;
+    rdfs:label "Liquor Store"@en;
+
+schema:MensClothingStore a rdfs:Class;
+    rdfs:label "Mens Clothing Store"@en;
+
+schema:MobilePhoneStore a rdfs:Class;
+    rdfs:label "Mobile Phone Store"@en;
+
+schema:MovieRentalStore a rdfs:Class;
+    rdfs:label "Movie Rental Store"@en;
+
+schema:MusicStore a rdfs:Class;
+    rdfs:label "Music Store"@en;
+
+schema:OfficeEquipmentStore a rdfs:Class;
+    rdfs:label "Office Equipment Store"@en;
+
+schema:OutletStore a rdfs:Class;
+    rdfs:label "Outlet Store"@en;
+
+schema:PawnShop a rdfs:Class;
+    rdfs:label "Pawn Shop"@en;
+
+schema:PetStore a rdfs:Class;
+    rdfs:label "Pet Store"@en;
+
+schema:ShoeStore a rdfs:Class;
+    rdfs:label "Shoe Store"@en;
+
+schema:SportingGoodsStore a rdfs:Class;
+    rdfs:label "Sporting Goods Store"@en;
+
+schema:TireShop a rdfs:Class;
+    rdfs:label "Tire Shop"@en;
+
+schema:ToyStore a rdfs:Class;
+    rdfs:label "Toy Store"@en;
+
+schema:WholesaleStore a rdfs:Class;
+    rdfs:label "Wholesale Store"@en;
+
+schema:TelevisionStation a rdfs:Class;
+    rdfs:label "Television Station"@en;
+
+schema:TouristInformationCenter a rdfs:Class;
+    rdfs:label "Tourist Information Center"@en;
+
+schema:TravelAgency a rdfs:Class;
+    rdfs:label "Travel Agency"@en;
+
+schema:Residence a rdfs:Class;
+    rdfs:label "Residence"@en;
+
+schema:ApartmentComplex a rdfs:Class;
+    rdfs:label "Apartment Complex"@en;
+
+schema:GatedResidenceCommunity a rdfs:Class;
+    rdfs:label "Gated Residence Community"@en;
+
+schema:SingleFamilyResidence a rdfs:Class;
+    rdfs:label "Single Family Residence"@en;
+
+schema:TouristAttraction a rdfs:Class;
+    rdfs:label "Tourist Attraction"@en;
+
+schema:Product a rdfs:Class;
+    rdfs:label "Product"@en;
+
+schema:about a rdf:Property;
+    rdfs:label "About"@en;
+
+schema:acceptsReservations a rdf:Property;
+    rdfs:label "Accepts Reservations"@en;
+
+schema:accountablePerson a rdf:Property;
+    rdfs:label "Accountable Person"@en;
+
+schema:action a rdf:Property;
+    rdfs:label "Action"@en;
+
+schema:activeIngredient a rdf:Property;
+    rdfs:label "Active Ingredient"@en;
+
+schema:activityDuration a rdf:Property;
+    rdfs:label "Activity Duration"@en;
+
+schema:activityFrequency a rdf:Property;
+    rdfs:label "Activity Frequency"@en;
+
+schema:actor a rdf:Property;
+    rdfs:label "Actor"@en;
+
+schema:actors a rdf:Property;
+    rdfs:label "Actors"@en;
+
+schema:additionalName a rdf:Property;
+    rdfs:label "Additional Name"@en;
+
+schema:additionalType a rdf:Property;
+    rdfs:label "Additional Type"@en;
+
+schema:additionalVariable a rdf:Property;
+    rdfs:label "Additional Variable"@en;
+
+schema:address a rdf:Property;
+    rdfs:label "Address"@en;
+
+schema:addressCountry a rdf:Property;
+    rdfs:label "Address Country"@en;
+
+schema:addressLocality a rdf:Property;
+    rdfs:label "Address Locality"@en;
+
+schema:addressRegion a rdf:Property;
+    rdfs:label "Address Region"@en;
+
+schema:administrationRoute a rdf:Property;
+    rdfs:label "Administration Route"@en;
+
+schema:adverseOutcome a rdf:Property;
+    rdfs:label "Adverse Outcome"@en;
+
+schema:affectedBy a rdf:Property;
+    rdfs:label "Affected by"@en;
+
+schema:affiliation a rdf:Property;
+    rdfs:label "Affiliation"@en;
+
+schema:aggregateRating a rdf:Property;
+    rdfs:label "Aggregate Rating"@en;
+
+schema:album a rdf:Property;
+    rdfs:label "Album"@en;
+
+schema:albums a rdf:Property;
+    rdfs:label "Albums"@en;
+
+schema:alcoholWarning a rdf:Property;
+    rdfs:label "Alcohol Warning"@en;
+
+schema:algorithm a rdf:Property;
+    rdfs:label "Algorithm"@en;
+
+schema:alternateName a rdf:Property;
+    rdfs:label "Alternate Name"@en;
+
+schema:alternativeHeadline a rdf:Property;
+    rdfs:label "Alternative Headline"@en;
+
+schema:alumni a rdf:Property;
+    rdfs:label "Alumni"@en;
+
+schema:alumniOf a rdf:Property;
+    rdfs:label "Alumni of"@en;
+
+schema:antagonist a rdf:Property;
+    rdfs:label "Antagonist"@en;
+
+schema:applicableLocation a rdf:Property;
+    rdfs:label "Applicable Location"@en;
+
+schema:applicationCategory a rdf:Property;
+    rdfs:label "Application Category"@en;
+
+schema:applicationSubCategory a rdf:Property;
+    rdfs:label "Application Sub Category"@en;
+
+schema:applicationSuite a rdf:Property;
+    rdfs:label "Application Suite"@en;
+
+schema:arterialBranch a rdf:Property;
+    rdfs:label "Arterial Branch"@en;
+
+schema:articleBody a rdf:Property;
+    rdfs:label "Article Body"@en;
+
+schema:articleSection a rdf:Property;
+    rdfs:label "Article Section"@en;
+
+schema:aspect a rdf:Property;
+    rdfs:label "Aspect"@en;
+
+schema:associatedAnatomy a rdf:Property;
+    rdfs:label "Associated Anatomy"@en;
+
+schema:associatedArticle a rdf:Property;
+    rdfs:label "Associated Article"@en;
+
+schema:associatedMedia a rdf:Property;
+    rdfs:label "Associated Media"@en;
+
+schema:associatedPathophysiology a rdf:Property;
+    rdfs:label "Associated Pathophysiology"@en;
+
+schema:attendee a rdf:Property;
+    rdfs:label "Attendee"@en;
+
+schema:attendees a rdf:Property;
+    rdfs:label "Attendees"@en;
+
+schema:audience a rdf:Property;
+    rdfs:label "Audience"@en;
+
+schema:audio a rdf:Property;
+    rdfs:label "Audio"@en;
+
+schema:author a rdf:Property;
+    rdfs:label "Author"@en;
+
+schema:availability a rdf:Property;
+    rdfs:label "Availability"@en;
+
+schema:availableIn a rdf:Property;
+    rdfs:label "Available in"@en;
+
+schema:availableService a rdf:Property;
+    rdfs:label "Available Service"@en;
+
+schema:availableStrength a rdf:Property;
+    rdfs:label "Available Strength"@en;
+
+schema:availableTest a rdf:Property;
+    rdfs:label "Available Test"@en;
+
+schema:award a rdf:Property;
+    rdfs:label "Award"@en;
+
+schema:awards a rdf:Property;
+    rdfs:label "Awards"@en;
+
+schema:background a rdf:Property;
+    rdfs:label "Background"@en;
+
+schema:baseSalary a rdf:Property;
+    rdfs:label "Base Salary"@en;
+
+schema:benefits a rdf:Property;
+    rdfs:label "Benefits"@en;
+
+schema:bestRating a rdf:Property;
+    rdfs:label "Best Rating"@en;
+
+schema:biomechnicalClass a rdf:Property;
+    rdfs:label "Biomechnical Class"@en;
+
+schema:birthDate a rdf:Property;
+    rdfs:label "Birth Date"@en;
+
+schema:bitrate a rdf:Property;
+    rdfs:label "Bitrate"@en;
+
+schema:blogPost a rdf:Property;
+    rdfs:label "Blog Post"@en;
+
+schema:blogPosts a rdf:Property;
+    rdfs:label "Blog Posts"@en;
+
+schema:bloodSupply a rdf:Property;
+    rdfs:label "Blood Supply"@en;
+
+schema:bodyLocation a rdf:Property;
+    rdfs:label "Body Location"@en;
+
+schema:bookEdition a rdf:Property;
+    rdfs:label "Book Edition"@en;
+
+schema:bookFormat a rdf:Property;
+    rdfs:label "Book Format"@en;
+
+schema:box a rdf:Property;
+    rdfs:label "Box"@en;
+
+schema:branch a rdf:Property;
+    rdfs:label "Branch"@en;
+
+schema:branchOf a rdf:Property;
+    rdfs:label "Branch of"@en;
+
+schema:brand a rdf:Property;
+    rdfs:label "Brand"@en;
+
+schema:breadcrumb a rdf:Property;
+    rdfs:label "Breadcrumb"@en;
+
+schema:breastfeedingWarning a rdf:Property;
+    rdfs:label "Breastfeeding Warning"@en;
+
+schema:browserRequirements a rdf:Property;
+    rdfs:label "Browser Requirements"@en;
+
+schema:byArtist a rdf:Property;
+    rdfs:label "By Artist"@en;
+
+schema:calories a rdf:Property;
+    rdfs:label "Calories"@en;
+
+schema:caption a rdf:Property;
+    rdfs:label "Caption"@en;
+
+schema:carbohydrateContent a rdf:Property;
+    rdfs:label "Carbohydrate Content"@en;
+
+schema:carrierRequirements a rdf:Property;
+    rdfs:label "Carrier Requirements"@en;
+
+schema:category a rdf:Property;
+    rdfs:label "Category"@en;
+
+schema:cause a rdf:Property;
+    rdfs:label "Cause"@en;
+
+schema:causeOf a rdf:Property;
+    rdfs:label "Cause of"@en;
+
+schema:children a rdf:Property;
+    rdfs:label "Children"@en;
+
+schema:cholesterolContent a rdf:Property;
+    rdfs:label "Cholesterol Content"@en;
+
+schema:circle a rdf:Property;
+    rdfs:label "Circle"@en;
+
+schema:citation a rdf:Property;
+    rdfs:label "Citation"@en;
+
+schema:clincalPharmacology a rdf:Property;
+    rdfs:label "Clincal Pharmacology"@en;
+
+schema:code a rdf:Property;
+    rdfs:label "Code"@en;
+
+schema:codeValue a rdf:Property;
+    rdfs:label "Code Value"@en;
+
+schema:codingSystem a rdf:Property;
+    rdfs:label "Coding System"@en;
+
+schema:colleague a rdf:Property;
+    rdfs:label "Colleague"@en;
+
+schema:colleagues a rdf:Property;
+    rdfs:label "Colleagues"@en;
+
+schema:comment a rdf:Property;
+    rdfs:label "Comment"@en;
+
+schema:commentText a rdf:Property;
+    rdfs:label "Comment Text"@en;
+
+schema:commentTime a rdf:Property;
+    rdfs:label "Comment Time"@en;
+
+schema:comprisedOf a rdf:Property;
+    rdfs:label "Comprised of"@en;
+
+schema:connectedTo a rdf:Property;
+    rdfs:label "Connected to"@en;
+
+schema:contactPoint a rdf:Property;
+    rdfs:label "Contact Point"@en;
+
+schema:contactPoints a rdf:Property;
+    rdfs:label "Contact Points"@en;
+
+schema:contactType a rdf:Property;
+    rdfs:label "Contact Type"@en;
+
+schema:containedIn a rdf:Property;
+    rdfs:label "Contained in"@en;
+
+schema:contentLocation a rdf:Property;
+    rdfs:label "Content Location"@en;
+
+schema:contentRating a rdf:Property;
+    rdfs:label "Content Rating"@en;
+
+schema:contentSize a rdf:Property;
+    rdfs:label "Content Size"@en;
+
+schema:contentUrl a rdf:Property;
+    rdfs:label "Content Url"@en;
+
+schema:contraindication a rdf:Property;
+    rdfs:label "Contraindication"@en;
+
+schema:contributor a rdf:Property;
+    rdfs:label "Contributor"@en;
+
+schema:cookTime a rdf:Property;
+    rdfs:label "Cook Time"@en;
+
+schema:cookingMethod a rdf:Property;
+    rdfs:label "Cooking Method"@en;
+
+schema:copyrightHolder a rdf:Property;
+    rdfs:label "Copyright Holder"@en;
+
+schema:copyrightYear a rdf:Property;
+    rdfs:label "Copyright Year"@en;
+
+schema:cost a rdf:Property;
+    rdfs:label "Cost"@en;
+
+schema:costCategory a rdf:Property;
+    rdfs:label "Cost Category"@en;
+
+schema:costCurrency a rdf:Property;
+    rdfs:label "Cost Currency"@en;
+
+schema:costOrigin a rdf:Property;
+    rdfs:label "Cost Origin"@en;
+
+schema:costPerUnit a rdf:Property;
+    rdfs:label "Cost Per Unit"@en;
+
+schema:countriesNotSupported a rdf:Property;
+    rdfs:label "Countries Not Supported"@en;
+
+schema:countriesSupported a rdf:Property;
+    rdfs:label "Countries Supported"@en;
+
+schema:creator a rdf:Property;
+    rdfs:label "Creator"@en;
+
+schema:currenciesAccepted a rdf:Property;
+    rdfs:label "Currencies Accepted"@en;
+
+schema:dateCreated a rdf:Property;
+    rdfs:label "Date Created"@en;
+
+schema:dateModified a rdf:Property;
+    rdfs:label "Date Modified"@en;
+
+schema:datePosted a rdf:Property;
+    rdfs:label "Date Posted"@en;
+
+schema:datePublished a rdf:Property;
+    rdfs:label "Date Published"@en;
+
+schema:dateline a rdf:Property;
+    rdfs:label "Dateline"@en;
+
+schema:deathDate a rdf:Property;
+    rdfs:label "Death Date"@en;
+
+schema:description a rdf:Property;
+    rdfs:label "Description"@en;
+
+schema:device a rdf:Property;
+    rdfs:label "Device"@en;
+
+schema:diagnosis a rdf:Property;
+    rdfs:label "Diagnosis"@en;
+
+schema:diagram a rdf:Property;
+    rdfs:label "Diagram"@en;
+
+schema:dietFeatures a rdf:Property;
+    rdfs:label "Diet Features"@en;
+
+schema:differentialDiagnosis a rdf:Property;
+    rdfs:label "Differential Diagnosis"@en;
+
+schema:director a rdf:Property;
+    rdfs:label "Director"@en;
+
+schema:discusses a rdf:Property;
+    rdfs:label "Discusses"@en;
+
+schema:discussionUrl a rdf:Property;
+    rdfs:label "Discussion Url"@en;
+
+schema:distinguishingSign a rdf:Property;
+    rdfs:label "Distinguishing Sign"@en;
+
+schema:dosageForm a rdf:Property;
+    rdfs:label "Dosage Form"@en;
+
+schema:doseSchedule a rdf:Property;
+    rdfs:label "Dose Schedule"@en;
+
+schema:doseUnit a rdf:Property;
+    rdfs:label "Dose Unit"@en;
+
+schema:doseValue a rdf:Property;
+    rdfs:label "Dose Value"@en;
+
+schema:downloadUrl a rdf:Property;
+    rdfs:label "Download Url"@en;
+
+schema:drainsTo a rdf:Property;
+    rdfs:label "Drains to"@en;
+
+schema:drug a rdf:Property;
+    rdfs:label "Drug"@en;
+
+schema:drugClass a rdf:Property;
+    rdfs:label "Drug Class"@en;
+
+schema:drugUnit a rdf:Property;
+    rdfs:label "Drug Unit"@en;
+
+schema:duplicateTherapy a rdf:Property;
+    rdfs:label "Duplicate Therapy"@en;
+
+schema:duration a rdf:Property;
+    rdfs:label "Duration"@en;
+
+schema:editor a rdf:Property;
+    rdfs:label "Editor"@en;
+
+schema:educationRequirements a rdf:Property;
+    rdfs:label "Education Requirements"@en;
+
+schema:elevation a rdf:Property;
+    rdfs:label "Elevation"@en;
+
+schema:email a rdf:Property;
+    rdfs:label "Email"@en;
+
+schema:embedUrl a rdf:Property;
+    rdfs:label "Embed Url"@en;
+
+schema:employee a rdf:Property;
+    rdfs:label "Employee"@en;
+
+schema:employees a rdf:Property;
+    rdfs:label "Employees"@en;
+
+schema:employmentType a rdf:Property;
+    rdfs:label "Employment Type"@en;
+
+schema:encodesCreativeWork a rdf:Property;
+    rdfs:label "Encodes Creative Work"@en;
+
+schema:encoding a rdf:Property;
+    rdfs:label "Encoding"@en;
+
+schema:encodingFormat a rdf:Property;
+    rdfs:label "Encoding Format"@en;
+
+schema:encodings a rdf:Property;
+    rdfs:label "Encodings"@en;
+
+schema:endDate a rdf:Property;
+    rdfs:label "End Date"@en;
+
+schema:endorsers a rdf:Property;
+    rdfs:label "Endorsers"@en;
+
+schema:epidemiology a rdf:Property;
+    rdfs:label "Epidemiology"@en;
+
+schema:episode a rdf:Property;
+    rdfs:label "Episode"@en;
+
+schema:episodeNumber a rdf:Property;
+    rdfs:label "Episode Number"@en;
+
+schema:episodes a rdf:Property;
+    rdfs:label "Episodes"@en;
+
+schema:estimatesRiskOf a rdf:Property;
+    rdfs:label "Estimates Risk of"@en;
+
+schema:event a rdf:Property;
+    rdfs:label "Event"@en;
+
+schema:events a rdf:Property;
+    rdfs:label "Events"@en;
+
+schema:evidenceLevel a rdf:Property;
+    rdfs:label "Evidence Level"@en;
+
+schema:evidenceOrigin a rdf:Property;
+    rdfs:label "Evidence Origin"@en;
+
+schema:exerciseType a rdf:Property;
+    rdfs:label "Exercise Type"@en;
+
+schema:exifData a rdf:Property;
+    rdfs:label "Exif Data"@en;
+
+schema:expectedPrognosis a rdf:Property;
+    rdfs:label "Expected Prognosis"@en;
+
+schema:experienceRequirements a rdf:Property;
+    rdfs:label "Experience Requirements"@en;
+
+schema:expertConsiderations a rdf:Property;
+    rdfs:label "Expert Considerations"@en;
+
+schema:expires a rdf:Property;
+    rdfs:label "Expires"@en;
+
+schema:familyName a rdf:Property;
+    rdfs:label "Family Name"@en;
+
+schema:fatContent a rdf:Property;
+    rdfs:label "Fat Content"@en;
+
+schema:faxNumber a rdf:Property;
+    rdfs:label "Fax Number"@en;
+
+schema:featureList a rdf:Property;
+    rdfs:label "Feature List"@en;
+
+schema:fiberContent a rdf:Property;
+    rdfs:label "Fiber Content"@en;
+
+schema:fileFormat a rdf:Property;
+    rdfs:label "File Format"@en;
+
+schema:fileSize a rdf:Property;
+    rdfs:label "File Size"@en;
+
+schema:follows a rdf:Property;
+    rdfs:label "Follows"@en;
+
+schema:followup a rdf:Property;
+    rdfs:label "Followup"@en;
+
+schema:foodWarning a rdf:Property;
+    rdfs:label "Food Warning"@en;
+
+schema:founder a rdf:Property;
+    rdfs:label "Founder"@en;
+
+schema:founders a rdf:Property;
+    rdfs:label "Founders"@en;
+
+schema:foundingDate a rdf:Property;
+    rdfs:label "Founding Date"@en;
+
+schema:frequency a rdf:Property;
+    rdfs:label "Frequency"@en;
+
+schema:function a rdf:Property;
+    rdfs:label "Function"@en;
+
+schema:functionalClass a rdf:Property;
+    rdfs:label "Functional Class"@en;
+
+schema:gender a rdf:Property;
+    rdfs:label "Gender"@en;
+
+schema:genre a rdf:Property;
+    rdfs:label "Genre"@en;
+
+schema:geo a rdf:Property;
+    rdfs:label "Geo"@en;
+
+schema:givenName a rdf:Property;
+    rdfs:label "Given Name"@en;
+
+schema:guideline a rdf:Property;
+    rdfs:label "Guideline"@en;
+
+schema:guidelineDate a rdf:Property;
+    rdfs:label "Guideline Date"@en;
+
+schema:guidelineSubject a rdf:Property;
+    rdfs:label "Guideline Subject"@en;
+
+schema:headline a rdf:Property;
+    rdfs:label "Headline"@en;
+
+schema:height a rdf:Property;
+    rdfs:label "Height"@en;
+
+schema:highPrice a rdf:Property;
+    rdfs:label "High Price"@en;
+
+schema:hiringOrganization a rdf:Property;
+    rdfs:label "Hiring Organization"@en;
+
+schema:homeLocation a rdf:Property;
+    rdfs:label "Home Location"@en;
+
+schema:honorificPrefix a rdf:Property;
+    rdfs:label "Honorific Prefix"@en;
+
+schema:honorificSuffix a rdf:Property;
+    rdfs:label "Honorific Suffix"@en;
+
+schema:hospitalAffiliation a rdf:Property;
+    rdfs:label "Hospital Affiliation"@en;
+
+schema:howPerformed a rdf:Property;
+    rdfs:label "How Performed"@en;
+
+schema:identifyingExam a rdf:Property;
+    rdfs:label "Identifying Exam"@en;
+
+schema:identifyingTest a rdf:Property;
+    rdfs:label "Identifying Test"@en;
+
+schema:illustrator a rdf:Property;
+    rdfs:label "Illustrator"@en;
+
+schema:image a rdf:Property;
+    rdfs:label "Image"@en;
+
+schema:imagingTechnique a rdf:Property;
+    rdfs:label "Imaging Technique"@en;
+
+schema:inAlbum a rdf:Property;
+    rdfs:label "In Album"@en;
+
+schema:inLanguage a rdf:Property;
+    rdfs:label "In Language"@en;
+
+schema:inPlaylist a rdf:Property;
+    rdfs:label "In Playlist"@en;
+
+schema:incentives a rdf:Property;
+    rdfs:label "Incentives"@en;
+
+schema:includedRiskFactor a rdf:Property;
+    rdfs:label "Included Risk Factor"@en;
+
+schema:increasesRiskOf a rdf:Property;
+    rdfs:label "Increases Risk of"@en;
+
+schema:indication a rdf:Property;
+    rdfs:label "Indication"@en;
+
+schema:industry a rdf:Property;
+    rdfs:label "Industry"@en;
+
+schema:infectiousAgent a rdf:Property;
+    rdfs:label "Infectious Agent"@en;
+
+schema:infectiousAgentClass a rdf:Property;
+    rdfs:label "Infectious Agent Class"@en;
+
+schema:ingredients a rdf:Property;
+    rdfs:label "Ingredients"@en;
+
+schema:insertion a rdf:Property;
+    rdfs:label "Insertion"@en;
+
+schema:installUrl a rdf:Property;
+    rdfs:label "Install Url"@en;
+
+schema:intensity a rdf:Property;
+    rdfs:label "Intensity"@en;
+
+schema:interactingDrug a rdf:Property;
+    rdfs:label "Interacting Drug"@en;
+
+schema:interactionCount a rdf:Property;
+    rdfs:label "Interaction Count"@en;
+
+schema:isAvailableGenerically a rdf:Property;
+    rdfs:label "Is Available Generically"@en;
+
+schema:isFamilyFriendly a rdf:Property;
+    rdfs:label "Is Family Friendly"@en;
+
+schema:isPartOf a rdf:Property;
+    rdfs:label "Is Part of"@en;
+
+schema:isProprietary a rdf:Property;
+    rdfs:label "Is Proprietary"@en;
+
+schema:isbn a rdf:Property;
+    rdfs:label "ISBN"@en;
+
+schema:itemCondition a rdf:Property;
+    rdfs:label "Item Condition"@en;
+
+schema:itemListElement a rdf:Property;
+    rdfs:label "Item List Element"@en;
+
+schema:itemListOrder a rdf:Property;
+    rdfs:label "Item List Order"@en;
+
+schema:itemOffered a rdf:Property;
+    rdfs:label "Item Offered"@en;
+
+schema:itemReviewed a rdf:Property;
+    rdfs:label "Item Reviewed"@en;
+
+schema:jobLocation a rdf:Property;
+    rdfs:label "Job Location"@en;
+
+schema:jobTitle a rdf:Property;
+    rdfs:label "Job Title"@en;
+
+schema:keywords a rdf:Property;
+    rdfs:label "Keywords"@en;
+
+schema:knows a rdf:Property;
+    rdfs:label "Knows"@en;
+
+schema:labelDetails a rdf:Property;
+    rdfs:label "Label Details"@en;
+
+schema:lastReviewed a rdf:Property;
+    rdfs:label "Last Reviewed"@en;
+
+schema:latitude a rdf:Property;
+    rdfs:label "Latitude"@en;
+
+schema:legalStatus a rdf:Property;
+    rdfs:label "Legal Status"@en;
+
+schema:line a rdf:Property;
+    rdfs:label "Line"@en;
+
+schema:location a rdf:Property;
+    rdfs:label "Location"@en;
+
+schema:longitude a rdf:Property;
+    rdfs:label "Longitude"@en;
+
+schema:lowPrice a rdf:Property;
+    rdfs:label "Low Price"@en;
+
+schema:mainContentOfPage a rdf:Property;
+    rdfs:label "Main Content of Page"@en;
+
+schema:manufacturer a rdf:Property;
+    rdfs:label "Manufacturer"@en;
+
+schema:map a rdf:Property;
+    rdfs:label "Map"@en;
+
+schema:maps a rdf:Property;
+    rdfs:label "Maps"@en;
+
+schema:maximumIntake a rdf:Property;
+    rdfs:label "Maximum Intake"@en;
+
+schema:mechanismOfAction a rdf:Property;
+    rdfs:label "Mechanism of Action"@en;
+
+schema:medicalSpecialty a rdf:Property;
+    rdfs:label "Medical Specialty"@en;
+
+schema:medicineSystem a rdf:Property;
+    rdfs:label "Medicine System"@en;
+
+schema:member a rdf:Property;
+    rdfs:label "Member"@en;
+
+schema:memberOf a rdf:Property;
+    rdfs:label "Member of"@en;
+
+schema:members a rdf:Property;
+    rdfs:label "Members"@en;
+
+schema:memoryRequirements a rdf:Property;
+    rdfs:label "Memory Requirements"@en;
+
+schema:mentions a rdf:Property;
+    rdfs:label "Mentions"@en;
+
+schema:menu a rdf:Property;
+    rdfs:label "Menu"@en;
+
+schema:model a rdf:Property;
+    rdfs:label "Model"@en;
+
+schema:musicBy a rdf:Property;
+    rdfs:label "Music by"@en;
+
+schema:musicGroupMember a rdf:Property;
+    rdfs:label "Music Group Member"@en;
+
+schema:name a rdf:Property;
+    rdfs:label "Name"@en;
+
+schema:nationality a rdf:Property;
+    rdfs:label "Nationality"@en;
+
+schema:naturalProgression a rdf:Property;
+    rdfs:label "Natural Progression"@en;
+
+schema:nerve a rdf:Property;
+    rdfs:label "Nerve"@en;
+
+schema:nerveMotor a rdf:Property;
+    rdfs:label "Nerve Motor"@en;
+
+schema:nonProprietaryName a rdf:Property;
+    rdfs:label "Non Proprietary Name"@en;
+
+schema:normalRange a rdf:Property;
+    rdfs:label "Normal Range"@en;
+
+schema:numTracks a rdf:Property;
+    rdfs:label "Num Tracks"@en;
+
+schema:numberOfEpisodes a rdf:Property;
+    rdfs:label "Number of Episodes"@en;
+
+schema:numberOfPages a rdf:Property;
+    rdfs:label "Number of Pages"@en;
+
+schema:nutrition a rdf:Property;
+    rdfs:label "Nutrition"@en;
+
+schema:occupationalCategory a rdf:Property;
+    rdfs:label "Occupational Category"@en;
+
+schema:offerCount a rdf:Property;
+    rdfs:label "Offer Count"@en;
+
+schema:offers a rdf:Property;
+    rdfs:label "Offers"@en;
+
+schema:openingHours a rdf:Property;
+    rdfs:label "Opening Hours"@en;
+
+schema:operatingSystem a rdf:Property;
+    rdfs:label "Operating System"@en;
+
+schema:origin a rdf:Property;
+    rdfs:label "Origin"@en;
+
+schema:originatesFrom a rdf:Property;
+    rdfs:label "Originates From"@en;
+
+schema:outcome a rdf:Property;
+    rdfs:label "Outcome"@en;
+
+schema:overdosage a rdf:Property;
+    rdfs:label "Overdosage"@en;
+
+schema:overview a rdf:Property;
+    rdfs:label "Overview"@en;
+
+schema:parent a rdf:Property;
+    rdfs:label "Parent"@en;
+
+schema:parents a rdf:Property;
+    rdfs:label "Parents"@en;
+
+schema:partOfSeason a rdf:Property;
+    rdfs:label "Part of Season"@en;
+
+schema:partOfSystem a rdf:Property;
+    rdfs:label "Part of System"@en;
+
+schema:partOfTVSeries a rdf:Property;
+    rdfs:label "Part of TV Series"@en;
+
+schema:pathophysiology a rdf:Property;
+    rdfs:label "Pathophysiology"@en;
+
+schema:paymentAccepted a rdf:Property;
+    rdfs:label "Payment Accepted"@en;
+
+schema:performer a rdf:Property;
+    rdfs:label "Performer"@en;
+
+schema:performerIn a rdf:Property;
+    rdfs:label "Performer in"@en;
+
+schema:performers a rdf:Property;
+    rdfs:label "Performers"@en;
+
+schema:permissions a rdf:Property;
+    rdfs:label "Permissions"@en;
+
+schema:phase a rdf:Property;
+    rdfs:label "Phase"@en;
+
+schema:photo a rdf:Property;
+    rdfs:label "Photo"@en;
+
+schema:photos a rdf:Property;
+    rdfs:label "Photos"@en;
+
+schema:physiologicalBenefits a rdf:Property;
+    rdfs:label "Physiological Benefits"@en;
+
+schema:playerType a rdf:Property;
+    rdfs:label "Player Type"@en;
+
+schema:polygon a rdf:Property;
+    rdfs:label "Polygon"@en;
+
+schema:population a rdf:Property;
+    rdfs:label "Population"@en;
+
+schema:possibleComplication a rdf:Property;
+    rdfs:label "Possible Complication"@en;
+
+schema:possibleTreatment a rdf:Property;
+    rdfs:label "Possible Treatment"@en;
+
+schema:postOfficeBoxNumber a rdf:Property;
+    rdfs:label "Post Office Box Number"@en;
+
+schema:postOp a rdf:Property;
+    rdfs:label "Post Op"@en;
+
+schema:postalCode a rdf:Property;
+    rdfs:label "Postal Code"@en;
+
+schema:preOp a rdf:Property;
+    rdfs:label "Pre Op"@en;
+
+schema:pregnancyCategory a rdf:Property;
+    rdfs:label "Pregnancy Category"@en;
+
+schema:pregnancyWarning a rdf:Property;
+    rdfs:label "Pregnancy Warning"@en;
+
+schema:prepTime a rdf:Property;
+    rdfs:label "Prep Time"@en;
+
+schema:preparation a rdf:Property;
+    rdfs:label "Preparation"@en;
+
+schema:prescribingInfo a rdf:Property;
+    rdfs:label "Prescribing Info"@en;
+
+schema:prescriptionStatus a rdf:Property;
+    rdfs:label "Prescription Status"@en;
+
+schema:price a rdf:Property;
+    rdfs:label "Price"@en;
+
+schema:priceCurrency a rdf:Property;
+    rdfs:label "Price Currency"@en;
+
+schema:priceRange a rdf:Property;
+    rdfs:label "Price Range"@en;
+
+schema:priceValidUntil a rdf:Property;
+    rdfs:label "Price Valid Until"@en;
+
+schema:primaryImageOfPage a rdf:Property;
+    rdfs:label "Primary Image of Page"@en;
+
+schema:primaryPrevention a rdf:Property;
+    rdfs:label "Primary Prevention"@en;
+
+schema:printColumn a rdf:Property;
+    rdfs:label "Print Column"@en;
+
+schema:printEdition a rdf:Property;
+    rdfs:label "Print Edition"@en;
+
+schema:printPage a rdf:Property;
+    rdfs:label "Print Page"@en;
+
+schema:printSection a rdf:Property;
+    rdfs:label "Print Section"@en;
+
+schema:procedure a rdf:Property;
+    rdfs:label "Procedure"@en;
+
+schema:procedureType a rdf:Property;
+    rdfs:label "Procedure Type"@en;
+
+schema:processorRequirements a rdf:Property;
+    rdfs:label "Processor Requirements"@en;
+
+schema:producer a rdf:Property;
+    rdfs:label "Producer"@en;
+
+schema:productID a rdf:Property;
+    rdfs:label "Product ID"@en;
+
+schema:productionCompany a rdf:Property;
+    rdfs:label "Production Company"@en;
+
+schema:proprietaryName a rdf:Property;
+    rdfs:label "Proprietary Name"@en;
+
+schema:proteinContent a rdf:Property;
+    rdfs:label "Protein Content"@en;
+
+schema:provider a rdf:Property;
+    rdfs:label "Provider"@en;
+
+schema:publicationType a rdf:Property;
+    rdfs:label "Publication Type"@en;
+
+schema:publisher a rdf:Property;
+    rdfs:label "Publisher"@en;
+
+schema:publishingPrinciples a rdf:Property;
+    rdfs:label "Publishing Principles"@en;
+
+schema:purpose a rdf:Property;
+    rdfs:label "Purpose"@en;
+
+schema:qualifications a rdf:Property;
+    rdfs:label "Qualifications"@en;
+
+schema:ratingCount a rdf:Property;
+    rdfs:label "Rating Count"@en;
+
+schema:ratingValue a rdf:Property;
+    rdfs:label "Rating Value"@en;
+
+schema:recipeCategory a rdf:Property;
+    rdfs:label "Recipe Category"@en;
+
+schema:recipeCuisine a rdf:Property;
+    rdfs:label "Recipe Cuisine"@en;
+
+schema:recipeInstructions a rdf:Property;
+    rdfs:label "Recipe Instructions"@en;
+
+schema:recipeYield a rdf:Property;
+    rdfs:label "Recipe Yield"@en;
+
+schema:recognizingAuthority a rdf:Property;
+    rdfs:label "Recognizing Authority"@en;
+
+schema:recommendationStrength a rdf:Property;
+    rdfs:label "Recommendation Strength"@en;
+
+schema:recommendedIntake a rdf:Property;
+    rdfs:label "Recommended Intake"@en;
+
+schema:regionDrained a rdf:Property;
+    rdfs:label "Region Drained"@en;
+
+schema:regionsAllowed a rdf:Property;
+    rdfs:label "Regions Allowed"@en;
+
+schema:relatedAnatomy a rdf:Property;
+    rdfs:label "Related Anatomy"@en;
+
+schema:relatedCondition a rdf:Property;
+    rdfs:label "Related Condition"@en;
+
+schema:relatedDrug a rdf:Property;
+    rdfs:label "Related Drug"@en;
+
+schema:relatedLink a rdf:Property;
+    rdfs:label "Related Link"@en;
+
+schema:relatedStructure a rdf:Property;
+    rdfs:label "Related Structure"@en;
+
+schema:relatedTherapy a rdf:Property;
+    rdfs:label "Related Therapy"@en;
+
+schema:relatedTo a rdf:Property;
+    rdfs:label "Related to"@en;
+
+schema:releaseNotes a rdf:Property;
+    rdfs:label "Release Notes"@en;
+
+schema:relevantSpecialty a rdf:Property;
+    rdfs:label "Relevant Specialty"@en;
+
+schema:repetitions a rdf:Property;
+    rdfs:label "Repetitions"@en;
+
+schema:replyToUrl a rdf:Property;
+    rdfs:label "Reply to Url"@en;
+
+schema:representativeOfPage a rdf:Property;
+    rdfs:label "Representative of Page"@en;
+
+schema:requirements a rdf:Property;
+    rdfs:label "Requirements"@en;
+
+schema:requiresSubscription a rdf:Property;
+    rdfs:label "Requires Subscription"@en;
+
+schema:responsibilities a rdf:Property;
+    rdfs:label "Responsibilities"@en;
+
+schema:restPeriods a rdf:Property;
+    rdfs:label "Rest Periods"@en;
+
+schema:review a rdf:Property;
+    rdfs:label "Review"@en;
+
+schema:reviewBody a rdf:Property;
+    rdfs:label "Review Body"@en;
+
+schema:reviewCount a rdf:Property;
+    rdfs:label "Review Count"@en;
+
+schema:reviewRating a rdf:Property;
+    rdfs:label "Review Rating"@en;
+
+schema:reviewedBy a rdf:Property;
+    rdfs:label "Reviewed by"@en;
+
+schema:reviews a rdf:Property;
+    rdfs:label "Reviews"@en;
+
+schema:riskFactor a rdf:Property;
+    rdfs:label "Risk Factor"@en;
+
+schema:risks a rdf:Property;
+    rdfs:label "Risks"@en;
+
+schema:runsTo a rdf:Property;
+    rdfs:label "Runs to"@en;
+
+schema:safetyConsideration a rdf:Property;
+    rdfs:label "Safety Consideration"@en;
+
+schema:salaryCurrency a rdf:Property;
+    rdfs:label "Salary Currency"@en;
+
+schema:saturatedFatContent a rdf:Property;
+    rdfs:label "Saturated Fat Content"@en;
+
+schema:screenshot a rdf:Property;
+    rdfs:label "Screenshot"@en;
+
+schema:season a rdf:Property;
+    rdfs:label "Season"@en;
+
+schema:seasonNumber a rdf:Property;
+    rdfs:label "Season Number"@en;
+
+schema:seasons a rdf:Property;
+    rdfs:label "Seasons"@en;
+
+schema:secondaryPrevention a rdf:Property;
+    rdfs:label "Secondary Prevention"@en;
+
+schema:seller a rdf:Property;
+    rdfs:label "Seller"@en;
+
+schema:sensoryUnit a rdf:Property;
+    rdfs:label "Sensory Unit"@en;
+
+schema:seriousAdverseOutcome a rdf:Property;
+    rdfs:label "Serious Adverse Outcome"@en;
+
+schema:servesCuisine a rdf:Property;
+    rdfs:label "Serves Cuisine"@en;
+
+schema:servingSize a rdf:Property;
+    rdfs:label "Serving Size"@en;
+
+schema:sibling a rdf:Property;
+    rdfs:label "Sibling"@en;
+
+schema:siblings a rdf:Property;
+    rdfs:label "Siblings"@en;
+
+schema:signDetected a rdf:Property;
+    rdfs:label "Sign Detected"@en;
+
+schema:signOrSymptom a rdf:Property;
+    rdfs:label "Sign or Symptom"@en;
+
+schema:significance a rdf:Property;
+    rdfs:label "Significance"@en;
+
+schema:significantLink a rdf:Property;
+    rdfs:label "Significant Link"@en;
+
+schema:significantLinks a rdf:Property;
+    rdfs:label "Significant Links"@en;
+
+schema:skills a rdf:Property;
+    rdfs:label "Skills"@en;
+
+schema:sodiumContent a rdf:Property;
+    rdfs:label "Sodium Content"@en;
+
+schema:softwareVersion a rdf:Property;
+    rdfs:label "Software Version"@en;
+
+schema:source a rdf:Property;
+    rdfs:label "Source"@en;
+
+schema:sourceOrganization a rdf:Property;
+    rdfs:label "Source Organization"@en;
+
+schema:sourcedFrom a rdf:Property;
+    rdfs:label "Sourced From"@en;
+
+schema:specialCommitments a rdf:Property;
+    rdfs:label "Special Commitments"@en;
+
+schema:specialty a rdf:Property;
+    rdfs:label "Specialty"@en;
+
+schema:sponsor a rdf:Property;
+    rdfs:label "Sponsor"@en;
+
+schema:spouse a rdf:Property;
+    rdfs:label "Spouse"@en;
+
+schema:stage a rdf:Property;
+    rdfs:label "Stage"@en;
+
+schema:stageAsNumber a rdf:Property;
+    rdfs:label "Stage As Number"@en;
+
+schema:startDate a rdf:Property;
+    rdfs:label "Start Date"@en;
+
+schema:status a rdf:Property;
+    rdfs:label "Status"@en;
+
+schema:storageRequirements a rdf:Property;
+    rdfs:label "Storage Requirements"@en;
+
+schema:streetAddress a rdf:Property;
+    rdfs:label "Street Address"@en;
+
+schema:strengthUnit a rdf:Property;
+    rdfs:label "Strength Unit"@en;
+
+schema:strengthValue a rdf:Property;
+    rdfs:label "Strength Value"@en;
+
+schema:structuralClass a rdf:Property;
+    rdfs:label "Structural Class"@en;
+
+schema:study a rdf:Property;
+    rdfs:label "Study"@en;
+
+schema:studyDesign a rdf:Property;
+    rdfs:label "Study Design"@en;
+
+schema:studyLocation a rdf:Property;
+    rdfs:label "Study Location"@en;
+
+schema:studySubject a rdf:Property;
+    rdfs:label "Study Subject"@en;
+
+schema:subEvent a rdf:Property;
+    rdfs:label "Sub Event"@en;
+
+schema:subEvents a rdf:Property;
+    rdfs:label "Sub Events"@en;
+
+schema:subStageSuffix a rdf:Property;
+    rdfs:label "Sub Stage Suffix"@en;
+
+schema:subStructure a rdf:Property;
+    rdfs:label "Sub Structure"@en;
+
+schema:subTest a rdf:Property;
+    rdfs:label "Sub Test"@en;
+
+schema:subtype a rdf:Property;
+    rdfs:label "Subtype"@en;
+
+schema:sugarContent a rdf:Property;
+    rdfs:label "Sugar Content"@en;
+
+schema:superEvent a rdf:Property;
+    rdfs:label "Super Event"@en;
+
+schema:supplyTo a rdf:Property;
+    rdfs:label "Supply to"@en;
+
+schema:targetPopulation a rdf:Property;
+    rdfs:label "Target Population"@en;
+
+schema:telephone a rdf:Property;
+    rdfs:label "Telephone"@en;
+
+schema:text a rdf:Property;
+    rdfs:label "Text"@en;
+
+schema:thumbnail a rdf:Property;
+    rdfs:label "Thumbnail"@en;
+
+schema:thumbnailUrl a rdf:Property;
+    rdfs:label "Thumbnail Url"@en;
+
+schema:tickerSymbol a rdf:Property;
+    rdfs:label "Ticker Symbol"@en;
+
+schema:tissueSample a rdf:Property;
+    rdfs:label "Tissue Sample"@en;
+
+schema:title a rdf:Property;
+    rdfs:label "Title"@en;
+
+schema:totalTime a rdf:Property;
+    rdfs:label "Total Time"@en;
+
+schema:track a rdf:Property;
+    rdfs:label "Track"@en;
+
+schema:tracks a rdf:Property;
+    rdfs:label "Tracks"@en;
+
+schema:trailer a rdf:Property;
+    rdfs:label "Trailer"@en;
+
+schema:transFatContent a rdf:Property;
+    rdfs:label "Trans Fat Content"@en;
+
+schema:transcript a rdf:Property;
+    rdfs:label "Transcript"@en;
+
+schema:transmissionMethod a rdf:Property;
+    rdfs:label "Transmission Method"@en;
+
+schema:trialDesign a rdf:Property;
+    rdfs:label "Trial Design"@en;
+
+schema:tributary a rdf:Property;
+    rdfs:label "Tributary"@en;
+
+schema:typicalTest a rdf:Property;
+    rdfs:label "Typical Test"@en;
+
+schema:unsaturatedFatContent a rdf:Property;
+    rdfs:label "Unsaturated Fat Content"@en;
+
+schema:uploadDate a rdf:Property;
+    rdfs:label "Upload Date"@en;
+
+schema:url a rdf:Property;
+    rdfs:label "URL"@en;
+
+schema:usedToDiagnose a rdf:Property;
+    rdfs:label "Used to Diagnose"@en;
+
+schema:usesDevice a rdf:Property;
+    rdfs:label "Uses Device"@en;
+
+schema:version a rdf:Property;
+    rdfs:label "Version"@en;
+
+schema:video a rdf:Property;
+    rdfs:label "Video"@en;
+
+schema:videoFrameSize a rdf:Property;
+    rdfs:label "Video Frame Size"@en;
+
+schema:videoQuality a rdf:Property;
+    rdfs:label "Video Quality"@en;
+
+schema:warning a rdf:Property;
+    rdfs:label "Warning"@en;
+
+schema:width a rdf:Property;
+    rdfs:label "Width"@en;
+
+schema:wordCount a rdf:Property;
+    rdfs:label "Word Count"@en;
+
+schema:workHours a rdf:Property;
+    rdfs:label "Work Hours"@en;
+
+schema:workLocation a rdf:Property;
+    rdfs:label "Work Location"@en;
+
+schema:workload a rdf:Property;
+    rdfs:label "Workload"@en;
+
+schema:worksFor a rdf:Property;
+    rdfs:label "Works for"@en;
+
+schema:worstRating a rdf:Property;
+    rdfs:label "Worst Rating"@en;
